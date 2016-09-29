@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Layouts.GridLayoutXaml">
+	<Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+  
+      <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Blue" MinimumHeightRequest="100" />
+      
+      <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Teal">
+        <Button x:Name="btnWater" Text="Water"/>
+        <Button x:Name="btnBathroom" Text="Bathroom"/>
+        <Button x:Name="btnPain" Text="Pain"/>
+        <Button x:Name="btnOtherMed" Text="Other Medical"/>
+        <Button x:Name="btnOtherNonMed" Text="Other Non-Medical"/>
+        <Button x:Name="btnEmergency" Text="Emergency"/>
+      </StackLayout>
+  
+      <Label x:Name="lblStatus" Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"
+             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+             Text="This is where different status messages will be shown." />
+  
+      <StackLayout Grid.Row="1" Grid.Column="2">
+        <ListView x:Name="lstStaff" HorizontalOptions="FillAndExpand" MinimumHeightRequest="200" BackgroundColor="Green"/>
+        <Image  BackgroundColor="Red" MinimumHeightRequest="200" MinimumWidthRequest="200"/>
+      </StackLayout>
+  </Grid>
+</ContentPage>
