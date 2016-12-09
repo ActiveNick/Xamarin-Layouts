@@ -5,18 +5,35 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_Layouts
 {
 	public class App : Xamarin.Forms.Application
     {
-		public App ()
-		{
-            // The root page of your application
-            MainPage = new GridLayoutXaml();
+        public static NavigationPage NavigationPage { get; private set; }
+        private static RootPage RootPage;
+        public static bool MenuIsPresented
+        {
+            get
+            {
+                return RootPage.IsPresented;
+            }
+            set
+            {
+                RootPage.IsPresented = value;
+            }
         }
 
-		protected override void OnStart ()
+        public App()
+        {
+            var menuPage = new MenuPage();
+            NavigationPage = new NavigationPage(new HomePage());
+            RootPage = new RootPage();
+            RootPage.Master = menuPage;
+            RootPage.Detail = NavigationPage;
+            MainPage = RootPage;
+        }
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

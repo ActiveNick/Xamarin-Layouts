@@ -13,6 +13,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin_Layouts", "Xamarin-
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Xamarin-Layouts\Xamarin_Layouts\Xamarin_Layouts.projitems*{1614e43b-4b18-49a3-8a34-3099ef98f7cc}*SharedItemsImports = 4
+		Xamarin-Layouts\Xamarin_Layouts\Xamarin_Layouts.projitems*{2a6bfd00-4ada-4a2e-ab14-4c79e0f50abb}*SharedItemsImports = 4
+		Xamarin-Layouts\Xamarin_Layouts\Xamarin_Layouts.projitems*{2cbf1a98-bcb5-46fb-b725-620ef92e28aa}*SharedItemsImports = 4
 		Xamarin-Layouts\Xamarin_Layouts\Xamarin_Layouts.projitems*{d7870810-ffd8-4083-9fbe-a67115737cf1}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,8 +97,6 @@ Global
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Debug|x64.Build.0 = Debug|Any CPU
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Debug|x64.Deploy.0 = Debug|Any CPU
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Debug|x86.Build.0 = Debug|Any CPU
-		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Debug|x86.Deploy.0 = Debug|Any CPU
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2CBF1A98-BCB5-46FB-B725-620EF92E28AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
