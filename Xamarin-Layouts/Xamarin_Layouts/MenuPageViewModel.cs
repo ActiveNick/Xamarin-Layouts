@@ -8,12 +8,14 @@ namespace Xamarin_Layouts
     {
 
         public ICommand GoHomeCommand { get; set; }
+        public ICommand GoLoginCommand { get; set; }
         public ICommand GoGridLayoutCommand { get; set; }
         public ICommand GoSettingsCommand { get; set; }
 
         public MenuPageViewModel()
         {
             GoHomeCommand = new Command(GoHome);
+            GoLoginCommand = new Command(GoLogin);
             GoGridLayoutCommand = new Command(GoGridLayout);
             GoSettingsCommand = new Command(GoSettings);
         }
@@ -21,6 +23,12 @@ namespace Xamarin_Layouts
         void GoHome(object obj)
         {
             App.NavigationPage.Navigation.PopToRootAsync();
+            App.MenuIsPresented = false;
+        }
+
+        void GoLogin(object obj)
+        {
+            App.NavigationPage.Navigation.PushAsync(new LoginPage());
             App.MenuIsPresented = false;
         }
 
