@@ -11,9 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\GridLayoutXaml.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GridLayoutPage.xaml.cs">
       <SubType>Code</SubType>
-      <DependentUpon>GridLayoutXaml.xaml</DependentUpon>
+      <DependentUpon>GridLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml.cs">
       <SubType>Code</SubType>
@@ -37,7 +37,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridLayoutXaml.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridLayoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

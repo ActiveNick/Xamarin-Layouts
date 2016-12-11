@@ -40,7 +40,7 @@ namespace Xamarin_Layouts
 
         void GoGridLayout(object obj)
         {
-            App.NavigationPage.Navigation.PushAsync(new GridLayoutXaml());
+            App.NavigationPage.Navigation.PushAsync(new GridLayoutPage());
             App.MenuIsPresented = false;
         }
     }

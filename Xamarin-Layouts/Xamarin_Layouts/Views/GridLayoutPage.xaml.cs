@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace Xamarin_Layouts
 {
-	public partial class GridLayoutXaml : ContentPage
+	public partial class GridLayoutPage : ContentPage
 	{
-		public GridLayoutXaml ()
+		public GridLayoutPage ()
 		{
 			InitializeComponent ();
 		}
