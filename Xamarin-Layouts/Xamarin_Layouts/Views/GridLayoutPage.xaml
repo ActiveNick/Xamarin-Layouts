@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_Layouts.GridLayoutPage"
              Title="Grid Layout">
+  
+  <!-- Note that this layout is designed for landscape tablets. -->
 	<Grid>
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
@@ -11,12 +13,12 @@
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" />
         <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
       </Grid.ColumnDefinitions>
   
       <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Blue" MinimumHeightRequest="100" />
       
-      <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Teal">
+      <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua">
         <Button x:Name="btnWater" Text="Water"/>
         <Button x:Name="btnBathroom" Text="Bathroom"/>
         <Button x:Name="btnPain" Text="Pain"/>
@@ -25,13 +27,17 @@
         <Button x:Name="btnEmergency" Text="Emergency"/>
       </StackLayout>
   
-      <Label x:Name="lblStatus" Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"
-             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-             Text="This is where different status messages will be shown." />
+      <Label x:Name="lblStatus"
+             Grid.Row="1" Grid.Column="1" 
+             BackgroundColor="Yellow"
+             Margin="12"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+             Text="This is where different status messages will be shown. Note that this layout is designed for landscape tablets." />
   
-      <StackLayout Grid.Row="1" Grid.Column="2">
+      <StackLayout Grid.Row="1" Grid.Column="2" Margin="12" >
         <ListView x:Name="lstStaff" HorizontalOptions="FillAndExpand" MinimumHeightRequest="200" BackgroundColor="Green"/>
-        <Image  BackgroundColor="Red" MinimumHeightRequest="200" MinimumWidthRequest="200"/>
+        <Image HorizontalOptions="Center" Source="xamarinlogo.png" />
       </StackLayout>
   </Grid>
 </ContentPage>
