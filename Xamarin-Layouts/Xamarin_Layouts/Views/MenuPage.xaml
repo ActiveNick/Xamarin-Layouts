@@ -7,6 +7,7 @@
     <StackLayout BackgroundColor="#F2F2F2" Padding="12">
       <Button Text="Home" TextColor="White" BackgroundColor="Gray" Command="{Binding GoHomeCommand}" />
       <Button Text="Login" TextColor="White" BackgroundColor="Gray" Command="{Binding GoLoginCommand}" />
+      <Button Text="Button Grid" TextColor="White" BackgroundColor="Gray" Command="{Binding GoButtonGridCommand}" />
       <Button Text="Grid Layout" TextColor="White" BackgroundColor="Gray" Command="{Binding GoGridLayoutCommand}" />
 	    <Button Text="Settings" TextColor="White" BackgroundColor="Gray" Command="{Binding GoSettingsCommand}" />
     </StackLayout>

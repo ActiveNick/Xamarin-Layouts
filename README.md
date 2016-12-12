@@ -3,8 +3,9 @@ Sample Xamarin solution to experiment with Xamarin.Forms layouts. The layouts ar
 
 This is a work in progress and I will add more page layouts as I prototype UI designs for other Xamarin projects, some of which are private. It only contains the following UI layouts for now:
 
-* Grid Layout
 * Login Page
+* Button Grid, loaded dynamically in code-behind
+* Grid Layout
 
 ## Follow Me
 * Twitter: [@ActiveNick](http://twitter.com/ActiveNick)

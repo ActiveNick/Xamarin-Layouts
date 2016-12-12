@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Layouts.ButtonGridPage"
+             Title="Button Grid">
+  <StackLayout  Padding="12">
+    <!-- The source for this image is set in code since it is dynamic -->
+    <Image x:Name="imgLogo" Margin="12" />
+    <!-- Widget Grid that will be loaded dynamically based on the user config
+         downloaded from the cloud. -->
+    <Grid x:Name="WidgetGrid"
+          VerticalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+      </Grid.ColumnDefinitions>
+
+      <!-- See code-behind for the dynamic loading of widgets-->
+    </Grid>
+  </StackLayout>
+</ContentPage>
