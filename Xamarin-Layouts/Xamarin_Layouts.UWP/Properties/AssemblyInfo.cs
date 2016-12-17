@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xamarin_Layouts.UWP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Xamarin Layouts Samples for Windows 10")]
+[assembly: AssemblyDescription("Xamarin Layouts Samples for Windows 10")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Mobility42 LLC")]
 [assembly: AssemblyProduct("Xamarin_Layouts.UWP")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright © Mobility42 LLC 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
