@@ -17,8 +17,9 @@
       </Grid.ColumnDefinitions>
   
       <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Blue" MinimumHeightRequest="100" />
-      
-      <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua">
+
+      <!-- The background colors are for demonstrative purposes only to easily illustrate what goes where at runtime -->
+      <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua" Margin="12">
         <Button x:Name="btnWater" Text="Water"/>
         <Button x:Name="btnBathroom" Text="Bathroom"/>
         <Button x:Name="btnPain" Text="Pain"/>

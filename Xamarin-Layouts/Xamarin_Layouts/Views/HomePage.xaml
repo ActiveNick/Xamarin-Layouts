@@ -3,5 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_Layouts.HomePage"
              Title="Main Page">
-	<Label Text="Main Page" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout VerticalOptions="Center" >
+    <Image x:Name="ImgLogo" Source="xamarinlogo.png" HorizontalOptions="Center" />
+    <Label Text="Main Page" Margin="0, 12, 0, 0" HorizontalOptions="Center" />
+  </StackLayout>
 </ContentPage>

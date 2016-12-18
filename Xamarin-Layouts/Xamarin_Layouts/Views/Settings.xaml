@@ -3,5 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_Layouts.Settings"
              Title="Settings">
-	<Label Text="Settings Page" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+    <Label Text="Use my location"/>
+    <Switch x:Name="SwitchLocation"/>
+  </StackLayout>
 </ContentPage>
