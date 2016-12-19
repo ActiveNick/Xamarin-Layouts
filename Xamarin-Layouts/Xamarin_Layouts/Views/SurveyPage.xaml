@@ -2,10 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_Layouts.SurveyPage"
-             Title="Survey Question">
+             Title="Survey">
+  <!-- This page demonstrates a survey template where the question and multiple choice answers
+       are loaded dynamically in code behind. -->
   <ScrollView>
-	  <StackLayout x:Name="StackAnswerOptions" Margin="12">
-      <Label Text="What is the best answer to this question?" Margin="0,0,0,12"/>
-    </StackLayout>
+    <Grid Padding="12">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="64" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <!-- Question -->
+      <Label Grid.Row="0" 
+             Grid.Column="0" 
+             Grid.ColumnSpan="2" 
+             Text="What is the best answer to this question?" 
+             Margin="12"/>
+      <!-- The dynamic answers are loaded here -->
+      <StackLayout x:Name="StackAnswerOptions" 
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="12">
+      </StackLayout>
+      <!-- Buttons at the bottom of the screen to navigate the survey -->
+      <Button Grid.Row="3"
+              Grid.Column="0"
+              Text="Previous"
+              TextColor="Black"
+              BackgroundColor="Silver"/>
+      <Button Grid.Row="3"
+              Grid.Column="1"
+              Text="Next"
+              TextColor="White"
+              BackgroundColor="Green"/>
+    </Grid>
   </ScrollView>
 </ContentPage>
