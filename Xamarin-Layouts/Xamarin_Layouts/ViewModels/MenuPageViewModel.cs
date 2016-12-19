@@ -11,6 +11,7 @@ namespace Xamarin_Layouts
         public ICommand GoLoginCommand { get; set; }
         public ICommand GoButtonGridCommand { get; set; }
         public ICommand GoGridLayoutCommand { get; set; }
+        public ICommand GoSurveyLayoutCommand { get; set; }
         public ICommand GoSettingsCommand { get; set; }
 
         public MenuPageViewModel()
@@ -19,6 +20,7 @@ namespace Xamarin_Layouts
             GoLoginCommand = new Command(GoLogin);
             GoButtonGridCommand = new Command(GoButtonGrid);
             GoGridLayoutCommand = new Command(GoGridLayout);
+            GoSurveyLayoutCommand = new Command(GoSurveyLayout);
             GoSettingsCommand = new Command(GoSettings);
         }
 
@@ -49,6 +51,12 @@ namespace Xamarin_Layouts
         void GoGridLayout(object obj)
         {
             App.NavigationPage.Navigation.PushAsync(new GridLayoutPage());
+            App.MenuIsPresented = false;
+        }
+
+        void GoSurveyLayout(object obj)
+        {
+            App.NavigationPage.Navigation.PushAsync(new SurveyPage());
             App.MenuIsPresented = false;
         }
     }
