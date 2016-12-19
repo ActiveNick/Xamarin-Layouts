@@ -6,6 +6,8 @@ This is a work in progress and I will add more page layouts as I prototype UI de
 * Login Page
 * Button Grid, loaded dynamically in code-behind
 * Grid Layout, currently designed for landscape tablets and phablet phones
+* Survey, where questions & answer options are loaded dynamically
+* Settings, quite basic for now
 
 ## Follow Me
 * Twitter: [@ActiveNick](http://twitter.com/ActiveNick)
