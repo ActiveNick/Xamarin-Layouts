@@ -22,14 +22,14 @@ namespace Xamarin_Layouts
 
             Dictionary<int, string> answerOptions = new Dictionary<int, string>
             {
-                { 1, "The first answer" }, 
-                { 2, "The second answer" },
-                { 3, "The third answer" }, 
-                { 4, "The fourth answer" }, 
-                { 5, "The fifth answer" }, 
-                { 6, "The sixth answer" }, 
-                { 7, "The seventh answer" }, 
-                { 8, "The last answer" }
+                { 1, "Blue" }, 
+                { 2, "Red" },
+                { 3, "Green" }, 
+                { 4, "Pink" }, 
+                { 5, "Black" }, 
+                { 6, "Purple" }, 
+                { 7, "Yellow" }, 
+                { 8, "Other, please specify" }
             };
 
 		    Button btn;
