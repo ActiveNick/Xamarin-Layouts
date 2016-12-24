@@ -12,6 +12,7 @@ namespace Xamarin_Layouts
         public ICommand GoButtonGridCommand { get; set; }
         public ICommand GoGridLayoutCommand { get; set; }
         public ICommand GoSurveyLayoutCommand { get; set; }
+        public ICommand GoUserProfileCommand { get; set;  }
         public ICommand GoSettingsCommand { get; set; }
 
         public MenuPageViewModel()
@@ -21,6 +22,7 @@ namespace Xamarin_Layouts
             GoButtonGridCommand = new Command(GoButtonGrid);
             GoGridLayoutCommand = new Command(GoGridLayout);
             GoSurveyLayoutCommand = new Command(GoSurveyLayout);
+            GoUserProfileCommand = new Command(GoUserProfile);
             GoSettingsCommand = new Command(GoSettings);
         }
 
@@ -36,12 +38,7 @@ namespace Xamarin_Layouts
             App.MenuIsPresented = false;
         }
 
-        void GoSettings(object obj)
-        {
-            App.NavigationPage.Navigation.PushAsync(new Settings());
-            App.MenuIsPresented = false;
-        }
-
+        
         void GoButtonGrid(object obj)
         {
             App.NavigationPage.Navigation.PushAsync(new ButtonGridPage());
@@ -57,6 +54,18 @@ namespace Xamarin_Layouts
         void GoSurveyLayout(object obj)
         {
             App.NavigationPage.Navigation.PushAsync(new SurveyPage());
+            App.MenuIsPresented = false;
+        }
+
+        void GoUserProfile(object obj)
+        {
+            App.NavigationPage.Navigation.PushAsync(new UserProfilePage());
+            App.MenuIsPresented = false;
+        }
+
+        void GoSettings(object obj)
+        {
+            App.NavigationPage.Navigation.PushAsync(new Settings());
             App.MenuIsPresented = false;
         }
     }

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Layouts.UserProfilePage"
+             Title="User Profile">
+  <Grid Padding="20" ColumnSpacing="10" RowSpacing="20" WidthRequest="500" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="64"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <StackLayout Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 HorizontalOptions="FillAndExpand"
+                 Margin="12">
+      <Label Text="Full Name*" />
+      <Entry x:Name="TxtFullname" Margin="0,0,0,8"/>
+      <Label Text="Contact Email*" />
+      <Entry x:Name="TxtEmail" Margin="0,0,0,8"/>
+      <Label Text="Cell Phone No*" />
+      <Entry x:Name="TxtCellPhone" Margin="0,0,0,8"/>
+      <Label Text="Home Phone No (optional)" />
+      <Entry x:Name="TxtHomePhone" Margin="0,0,0,8"/>
+      <Label Text="Authentication Preference" />
+      <Picker x:Name="PickAuthMethod" Margin="0,0,0,8"/>
+      <Label Text="* indicates a required field" TextColor="Gray" FontAttributes="Italic"/>
+    </StackLayout>
+    <Button x:Name="BtnSave"
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="Save Changes"
+            HorizontalOptions="FillAndExpand"
+            TextColor="White"
+            BackgroundColor="Blue"/>
+  </Grid>
+</ContentPage>

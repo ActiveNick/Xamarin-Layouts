@@ -10,6 +10,7 @@
       <Button Text="Button Grid" TextColor="White" BackgroundColor="Gray" Command="{Binding GoButtonGridCommand}" />
       <Button Text="Grid Layout" TextColor="White" BackgroundColor="Gray" Command="{Binding GoGridLayoutCommand}" />
       <Button Text="Survey" TextColor="White" BackgroundColor="Gray" Command="{Binding GoSurveyLayoutCommand}" />
+      <Button Text="User Profile" TextColor="White" BackgroundColor="Gray" Command="{Binding GoUserProfileCommand}" />
 	    <Button Text="Settings" TextColor="White" BackgroundColor="Gray" Command="{Binding GoSettingsCommand}" />
     </StackLayout>
   </ContentPage.Content>
