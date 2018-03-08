@@ -31,8 +31,10 @@ namespace Xamarin_Layouts
             {
 
                 btnWidget = new Button();
-
                 btnWidget.Image = "notes.png";
+                btnWidget.ContentLayout = 
+                    new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top, 10);
+
 #if __ANDROID__
                 btnWidget.FontSize = Device.GetNamedSize(NamedSize.Micro, typeof(Button));
 #else
@@ -40,7 +42,6 @@ namespace Xamarin_Layouts
 #endif
 
                 btnWidget.BackgroundColor = Color.FromHex("F2F2F2");  // Very pale gray
-
                 btnWidget.Text = "Notes";
 
                 WidgetGrid.Children.Add(btnWidget, col, row);
